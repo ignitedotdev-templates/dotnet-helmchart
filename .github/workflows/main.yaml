@@ -42,7 +42,7 @@ jobs:
 
       - name: Release dotnet using Helm chart
         run: |
-          release_name="django"
+          release_name="dotnet"
           helm repo update
           helm install $release_name chartmuseum/dotnet -f dotnet-values.yaml
             
