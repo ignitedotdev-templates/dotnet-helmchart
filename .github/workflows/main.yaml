@@ -44,7 +44,7 @@ jobs:
         run: |
           release_name="django"
           helm repo update
-          helm install $release_name django/django -f django-values.yaml
+          helm install $release_name chartmuseum/django -f django-values.yaml
             
       - name: Print Current Working Directory
         run: |
