@@ -1,0 +1,16 @@
+appName: dotnet
+
+containerPort: 80
+
+namespace: default
+tier: dotnet-backend
+
+serviceName: dotnet-service
+containerName: dotnet-container
+targetPort: 80
+servicePort: 6177
+registrySecret: harbor-registry-secret
+
+image:
+  name: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/dotnet-docker
+  tag: 9539742446-7
